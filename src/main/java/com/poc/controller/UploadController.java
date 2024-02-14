@@ -7,7 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 @RequestMapping(value ="/api/upload", produces = {"application/json"})
 @CrossOrigin("*")
-public class UploadArquivoController {
+public class UploadController {
 
     @PostMapping("/arquivo")
     public ResponseEntity<String> salvarArquivo(@RequestParam("file")MultipartFile file) {
